@@ -1,6 +1,7 @@
 // https://codeforces.com/blog/entry/139079  
 // Don't try to count
-
+#include <bits/stdc++.h>
+using namespace std;
 
 bool check(string x, string s){
     if(x.size() < s.size()){
