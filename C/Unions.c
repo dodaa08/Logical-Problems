@@ -1,13 +1,16 @@
     #include <stdio.h>
   
     /* define the union here */
-    
+    union Store{
+        int arr[6];
+        char chars[21]
+    };
 
     int main() {
-    
+        
         // initializer lists like this are assigned to the first member of the union/struct!
         // There are 6 ints here so...
-        <union declaration> intCharacters = {{1853169737, 1936876900, 1684955508, 1768838432, 561213039, 0}};
+        union Store intCharacters = {{1853169737, 1936876900, 1684955508, 1768838432, 561213039, 0}};
       
         /* testing code */
         printf("[");
